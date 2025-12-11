@@ -17,7 +17,7 @@ const Section: React.FC<SectionProps> = ({ id, className = '', children, title, 
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             className="mb-16 text-center"
           >
@@ -33,6 +33,7 @@ const Section: React.FC<SectionProps> = ({ id, className = '', children, title, 
                   className="absolute -bottom-2 left-0 w-full h-1 bg-cyan-500 rounded-full"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
+                  viewport={{ once: false }}
                   transition={{ delay: 0.5, duration: 0.8 }}
                 />
               </h2>
@@ -43,7 +44,7 @@ const Section: React.FC<SectionProps> = ({ id, className = '', children, title, 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: false, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {children}

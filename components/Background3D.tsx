@@ -3,16 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Extend JSX.IntrinsicElements to include R3F elements for TypeScript
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      group: any;
-      fog: any;
-    }
-  }
-}
-
 const StarField = () => {
   const ref = useRef<THREE.Points>(null!);
   const lastMouse = useRef({ x: 0, y: 0 });

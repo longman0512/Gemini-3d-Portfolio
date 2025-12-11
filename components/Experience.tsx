@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
                 key={job.id}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative group pl-8 md:pl-0"
               >
@@ -81,7 +81,7 @@ const Experience: React.FC = () => {
                 key={edu.id}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative group pl-8 md:pl-0"
               >

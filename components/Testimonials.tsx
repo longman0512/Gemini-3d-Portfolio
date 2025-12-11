@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
             key={t.id}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             whileHover={{ y: -10 }}
             className="bg-gradient-to-b from-slate-800/50 to-slate-900/50 p-8 rounded-2xl border border-slate-700/50 backdrop-blur-sm relative"

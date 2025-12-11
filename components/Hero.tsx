@@ -15,7 +15,8 @@ const Hero: React.FC = () => {
         <div className="md:col-span-2 text-center md:text-left order-2 md:order-1">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-slate-800/50 border border-slate-700 text-cyan-400 font-tech text-sm tracking-wider mb-6 backdrop-blur-sm">
@@ -25,7 +26,8 @@ const Hero: React.FC = () => {
 
           <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tight mb-6"
           >
@@ -37,7 +39,8 @@ const Hero: React.FC = () => {
 
           <motion.p
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
             transition={{ duration: 1, delay: 0.5 }}
             className="text-slate-400 text-lg md:text-xl max-w-2xl md:mx-0 mx-auto mb-10 font-sans font-light leading-relaxed"
           >
@@ -46,7 +49,8 @@ const Hero: React.FC = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-6"
           >
@@ -62,7 +66,8 @@ const Hero: React.FC = () => {
         {/* Right Content (Photo) */}
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
           transition={{ duration: 1, delay: 0.6 }}
           className="order-1 md:order-2 flex justify-center relative"
         >
